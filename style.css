@@ -83,8 +83,7 @@ main {
 /* Desktop Navigation (visible by default) */
 .main-nav {
     display: block;
-    margin-left: auto; /* Pushes the nav to the right */
-    padding-right: 20px; /* Adds space between nav and icons */
+    margin-left: auto;
 }
 
 .main-nav ul {
@@ -107,6 +106,7 @@ main {
 
 .nav-icons {
     display: flex;
+    margin-left: 1.5rem; /* Add spacing between nav links and icons */
 }
 
 /* Mobile Navigation (hidden by default) */
@@ -480,9 +480,21 @@ body.dark-mode .floating-header .icon-button {
     color: var(--color-sandstone);
 }
 
-body.dark-mode .main-nav a,
-body.dark-mode .hero-blurb {
+body.dark-mode .main-nav a {
     color: var(--color-sandstone);
+}
+
+body.dark-mode .main-nav a:hover {
+    color: var(--color-goldenrod);
+}
+
+body.dark-mode .hero-blurb {
+    color: rgba(247, 244, 239, 0.8);
+}
+
+body.dark-mode .scroll-cue a {
+    color: var(--color-goldenrod);
+    opacity: 0.8;
 }
 
 body.dark-mode .mobile-nav-menu {
