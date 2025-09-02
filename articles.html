@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Just Wondering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="animated-shapes-container">
+        <div class="shape circle-shape" style="top: 10%; left: 5%;"></div>
+        <div class="shape square-shape" style="top: 25%; right: 10%;"></div>
+        <div class="shape triangle-shape" style="bottom: 15%; left: 20%;"></div>
+        <div class="shape circle-shape" style="bottom: 5%; right: 25%;"></div>
+        <div class="shape square-shape" style="top: 40%; left: 40%;"></div>
+        <div class="shape triangle-shape" style="top: 50%; right: 5%;"></div>
+    </div>
+
+    <header class="floating-header">
+        <div class="site-name">Just Wondering</div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="articles.html" class="active">Articles</a></li>
+                <li><a href="#">Musings</a></li>
+                <li><a href="#">Inquire</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+        <div class="nav-icons">
+            <button class="icon-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+            <button class="icon-button theme-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3.5 7 7 0 0 0 21 12.79z"></path></svg></button>
+        </div>
+
+        <div class="mobile-nav-container">
+            <div class="mobile-icons">
+                <button class="icon-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                <button class="icon-button theme-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3.5 7 7 0 0 0 21 12.79z"></path></svg></button>
+            </div>
+            <button class="hamburger-menu-btn" aria-label="Toggle navigation menu">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bottom-line"></div>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-menu">
+        <nav>
+            <ul>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="#">Musings</a></li>
+                <li><a href="#">Inquire</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="articles-main">
+        <section class="page-header">
+            <h1 class="page-title">Articles</h1>
+            <p class="page-blurb">A collection of essays, explorations, and thoughtful inquiries into the forces that shape our inner and outer worlds.</p>
+        </section>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="inner-world">Inner World</button>
+            <button class="filter-btn" data-filter="outer-world">Outer World</button>
+        </div>
+
+        <div class="shape-scroll-container">
+            <div class="shape-scroll-track">
+                <div class="shape circle-shape"></div>
+                <div class="shape square-shape"></div>
+                <div class="shape triangle-shape"></div>
+                <div class="shape circle-shape"></div>
+                <div class="shape square-shape"></div>
+                <div class="shape triangle-shape"></div>
+                <div class="shape circle-shape"></div>
+                <div class="shape square-shape"></div>
+                <div class="shape triangle-shape"></div>
+            </div>
+        </div>
+
+        <section class="articles-grid all-posts">
+            <article class="article-card outer-world-card" data-category="outer-world">
+                <div class="card-header">
+                    <div class="category-icon square-shape"></div>
+                    <span class="category-name">Outer World</span>
+                </div>
+                <h3 class="article-title">The Algorithmic Echo Chamber: An Analysis</h3>
+                <p class="article-excerpt">How do unseen digital signals shape our perceptions? This article breaks down the subtle ways algorithms influence our reality, from our media consumption to our political beliefs...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article class="article-card inner-world-card" data-category="inner-world">
+                <div class="card-header">
+                    <div class="category-icon circle-shape"></div>
+                    <span class="category-name">Inner World</span>
+                </div>
+                <h3 class="article-title">The Paradox of Productivity: A Reflection</h3>
+                <p class="article-excerpt">I'm just wondering why I backslide in terms of personal growth and why the cycle of self-improvement so often leads to self-hatred...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article class="article-card outer-world-card" data-category="outer-world">
+                <div class="card-header">
+                    <div class="category-icon square-shape"></div>
+                    <span class="category-name">Outer World</span>
+                </div>
+                <h3 class="article-title">Consent & The Digital Age: A Deconstruction</h3>
+                <p class="article-excerpt">Why do we so willingly give away our data and attention? This piece explores the psychology behind our digital consent...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </section>
+
+        <section class="interactive-description-section">
+            <h2 class="section-title">Two Worlds, One Journey</h2>
+            <div class="interactive-card" id="interactive-card">
+                <p class="card-text inner-text active">The **Inner World** is where we journey inward, exploring the landscape of our own minds, emotions, and personal growth. It's about self-discovery, introspection, and understanding the "why" behind our own thoughts and habits.</p>
+                <p class="card-text outer-text">The **Outer World** is where we look outward, analyzing the unseen signals and grand systems that shape our reality. It's about understanding the world around us, from the algorithms that influence our choices to the societal forces that drive culture.</p>
+                <button class="interact-btn">Tap to explore</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="mission-statement">This is a space for thoughtful inquiry, where the act of wondering leads to a more deliberate and meaningful existence.</p>
+        <p class="copyright">© 2025 Just Wondering. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.querySelector('.hamburger-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-nav-menu');
+            const body = document.body;
+
+            hamburgerBtn.addEventListener('click', () => {
+                hamburgerBtn.classList.toggle('is-open');
+                mobileMenu.classList.toggle('is-open');
+                body.classList.toggle('no-scroll');
+            });
+        });
+    </script>
+</body>
+</html>
