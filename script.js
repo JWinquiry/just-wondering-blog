@@ -24,4 +24,43 @@ document.addEventListener('DOMContentLoaded', () => {
     searchButton.addEventListener('click', () => {
         alert('Search functionality coming soon!');
     });
+
+    // New functionality for articles page
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const articles = document.querySelectorAll('.article-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons and add to the clicked one
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            articles.forEach(article => {
+                const category = article.getAttribute('data-category');
+                if (filterValue === 'all' || filterValue === category) {
+                    article.style.display = 'flex';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Interactive description card functionality
+    const interactiveCard = document.getElementById('interactive-card');
+    const cardTexts = interactiveCard.querySelectorAll('.card-text');
+    const interactBtn = interactiveCard.querySelector('.interact-btn');
+
+    interactBtn.addEventListener('click', () => {
+        cardTexts.forEach(text => {
+            text.classList.toggle('active');
+        });
+        if (cardTexts[0].classList.contains('active')) {
+             interactBtn.textContent = 'Tap to explore';
+        } else {
+            interactBtn.textContent = 'Tap to explore';
+        }
+    });
 });
