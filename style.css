@@ -25,6 +25,7 @@ body {
     color: var(--color-midnight);
     line-height: 1.6;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.no-scroll {
@@ -69,6 +70,7 @@ main {
     z-index: 1000;
     width: 90%;
     max-width: 960px;
+    transition: background-color 0.3s ease;
 }
 
 .site-name {
@@ -78,67 +80,11 @@ main {
     color: var(--color-midnight);
 }
 
-/* ==================== */
-/* Dark Mode Styles */
-/* ==================== */
-body.dark-mode {
-    background-color: var(--color-midnight);
-    color: var(--color-sandstone);
-}
-
-body.dark-mode .floating-header {
-    background-color: var(--color-midnight);
-    box-shadow: 0 4px 15px rgba(247, 244, 239, 0.1);
-}
-
-body.dark-mode .floating-header .icon-button {
-    color: var(--color-sandstone);
-}
-
-body.dark-mode .main-nav a,
-body.dark-mode .hero-blurb {
-    color: var(--color-sandstone);
-}
-
-body.dark-mode .mobile-nav-menu {
-    background-color: var(--color-midnight);
-}
-
-body.dark-mode .hamburger-menu-btn .line {
-    background-color: var(--color-sandstone);
-}
-
-body.dark-mode .article-card {
-    background-color: #2a2a2f; /* A darker shade for cards */
-    box-shadow: 0 2px 10px rgba(247, 244, 239, 0.05);
-}
-
-body.dark-mode .article-excerpt,
-body.dark-mode .card-header .category-name {
-    color: rgba(247, 244, 239, 0.7);
-}
-
-body.dark-mode .read-more {
-    color: var(--color-goldenrod);
-}
-
-body.dark-mode footer {
-    background-color: rgba(31, 31, 36, 0.5);
-    border-top: 1px solid rgba(247, 244, 239, 0.05);
-    color: rgba(247, 244, 239, 0.8);
-}
-
-body.dark-mode .mission-statement {
-    color: rgba(247, 244, 239, 0.8);
-}
-
-body.dark-mode .copyright {
-    color: rgba(247, 244, 239, 0.6);
-}
-
 /* Desktop Navigation (visible by default) */
 .main-nav {
     display: block;
+    margin-left: auto; /* Pushes the nav to the right */
+    padding-right: 20px; /* Adds space between nav and icons */
 }
 
 .main-nav ul {
@@ -511,4 +457,66 @@ footer {
     .site-name {
         font-size: 1.25rem;
     }
+}
+
+/* ==================== */
+/* Dark Mode Styles */
+/* ==================== */
+body.dark-mode {
+    background-color: var(--color-midnight);
+    color: var(--color-sandstone);
+}
+
+body.dark-mode .site-name {
+    color: var(--color-sandstone);
+}
+
+body.dark-mode .floating-header {
+    background-color: var(--color-midnight);
+    box-shadow: 0 4px 15px rgba(247, 244, 239, 0.1);
+}
+
+body.dark-mode .floating-header .icon-button {
+    color: var(--color-sandstone);
+}
+
+body.dark-mode .main-nav a,
+body.dark-mode .hero-blurb {
+    color: var(--color-sandstone);
+}
+
+body.dark-mode .mobile-nav-menu {
+    background-color: var(--color-midnight);
+}
+
+body.dark-mode .hamburger-menu-btn .line {
+    background-color: var(--color-sandstone);
+}
+
+body.dark-mode .article-card {
+    background-color: #2a2a2f; /* A darker shade for cards */
+    box-shadow: 0 2px 10px rgba(247, 244, 239, 0.05);
+}
+
+body.dark-mode .article-excerpt,
+body.dark-mode .card-header .category-name {
+    color: rgba(247, 244, 239, 0.7);
+}
+
+body.dark-mode .read-more {
+    color: var(--color-goldenrod);
+}
+
+body.dark-mode footer {
+    background-color: rgba(31, 31, 36, 0.5);
+    border-top: 1px solid rgba(247, 244, 239, 0.05);
+    color: rgba(247, 244, 239, 0.8);
+}
+
+body.dark-mode .mission-statement {
+    color: rgba(247, 244, 239, 0.8);
+}
+
+body.dark-mode .copyright {
+    color: rgba(247, 244, 239, 0.6);
 }
