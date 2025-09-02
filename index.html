@@ -22,6 +22,7 @@
 
     <header class="floating-header">
         <div class="site-name">Just Wondering</div>
+        
         <nav class="main-nav">
             <ul>
                 <li><a href="#">Inner World</a></li>
@@ -31,11 +32,36 @@
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
+        
         <div class="nav-icons">
             <button class="icon-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
             <button class="icon-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3.5 7 7 0 0 0 21 12.79z"></path></svg></button>
         </div>
+
+        <div class="mobile-nav-container">
+            <div class="mobile-icons">
+                <button class="icon-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                <button class="icon-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3.5 7 7 0 0 0 21 12.79z"></path></svg></button>
+            </div>
+            <button class="hamburger-menu-btn" aria-label="Toggle navigation menu">
+                <div class="line top-line"></div>
+                <div class="line mid-line"></div>
+                <div class="line bottom-line"></div>
+            </button>
+        </div>
     </header>
+
+    <div class="mobile-nav-menu">
+        <nav>
+            <ul>
+                <li><a href="#">Inner World</a></li>
+                <li><a href="#">Outer World</a></li>
+                <li><a href="#">Musings</a></li>
+                <li><a href="#">Inquire</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
         <section class="hero-section">
@@ -95,6 +121,20 @@
         <p class="mission-statement">This is a space for thoughtful inquiry, where the act of wondering leads to a more deliberate and meaningful existence.</p>
         <p class="copyright">© 2025 Just Wondering. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.querySelector('.hamburger-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-nav-menu');
+            const body = document.body;
+
+            hamburgerBtn.addEventListener('click', () => {
+                hamburgerBtn.classList.toggle('is-open');
+                mobileMenu.classList.toggle('is-open');
+                body.classList.toggle('no-scroll');
+            });
+        });
+    </script>
 
 </body>
 </html>
